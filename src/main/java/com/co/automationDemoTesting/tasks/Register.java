@@ -2,15 +2,13 @@ package com.co.automationDemoTesting.tasks;
 
 import com.co.automationDemoTesting.userinterfaces.HomePage;
 import com.co.automationDemoTesting.userinterfaces.RegisterPage;
-import cucumber.api.java.af.En;
-import cucumber.api.java.es.E;
+
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.Hit;
-import net.serenitybdd.screenplay.actions.SelectFromOptions;
+
 
 public class Register implements Task {
 
@@ -27,8 +25,11 @@ public class Register implements Task {
                 Click.on(RegisterPage.BTN_HOBBIES_CRICKET),
                 Click.on(RegisterPage.BTN_HOBBIES_MOVIES),
                 Click.on(RegisterPage.BTN_HOBBIES_HOCKEY),
-                Click.on(RegisterPage.LIST_LANGUAGE_SPANISH),
-                Click.on(RegisterPage.LIST_LANGUAGE_ENGLISH)
+                Click.on(RegisterPage.LIST_LANGUAGES),
+                Click.on(RegisterPage.LIST_LANGUAGES_SPANISH)
+
+
+
 
 
         );

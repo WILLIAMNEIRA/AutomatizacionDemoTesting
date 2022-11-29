@@ -13,8 +13,15 @@ public class RegisterPage {
     public static final Target BTN_HOBBIES_CRICKET = Target.the("Seleccione aqui su Hobbies(Cricket)").locatedBy("//input[@id='checkbox1']");
     public static final Target BTN_HOBBIES_MOVIES = Target.the("Seleccione aqui su Hobbies(Movies)").locatedBy("//input[@id='checkbox2']");
     public static final Target BTN_HOBBIES_HOCKEY = Target.the("Seleccione aqui su Hobbies(Hockey)").locatedBy("//input[@id='checkbox3']");
-    public static final Target LIST_LANGUAGES = Target.the("Seleccione aqui su Idioma)").locatedBy("//div[@id='msdd']");
-    public static final Target SELECT_SKILLS = Target.the("Seleccione aqui sus Habilidades)").locatedBy("//select[@id='Skills']");
+    public static final Target LIST_LANGUAGES = Target.the("Seleccione aqui su Idioma)").locatedBy("//form[@id='basicBootstrapForm']/div[7]/div/multi-select/div");
+
+    public static final Target LIST_LANGUAGES_SPANISH = Target.the("Seleccione aqui su Idioma Español)").locatedBy("//li[35]/a");
+    public static final Target SELECT_SKILLS = Target.the("Seleccione aqui sus Habilidades)")
+            .locatedBy("//select[@id='Skills']");
+
+
+
+
     public static final Target SELECT_COUNTRY = Target.the("Seleccione aqui su pais)").locatedBy("//span[@id='select2-country-container']");
     public static final Target SELECT_DATEOFBIRTH_YEAR = Target.the("Seleccione aqui su (Año) de nacimiento)").locatedBy("//select[@id='yearbox']");
     public static final Target SELECT_DATEOFBIRTH_DAY = Target.the("Seleccione aqui su (Dia) de nacimiento)").locatedBy("//select[@id='daybox']");
